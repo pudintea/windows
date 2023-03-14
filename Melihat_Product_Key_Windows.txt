@@ -1,0 +1,10 @@
+========
+Cara pertama untuk melihat product key Windows 10 adalah dengan melihatnya dari CMD. Berikut adalah langkah-langkahnya.
+1. Cari “Command Prompter” pada menu Start.
+2. Lalu, klik dan pilih “run as administrator” pada menu di bagian kanan.
+3. Setelah jendela CMD terbuka, masukkan kode berikut "wmic path softwarelicensingservice get OA3xOriginalProductKey" (tanpa kutip) dan klik Enter.
+4. Setelah itu akan muncul 25 digit product key Windows 10 di bawahnya.
+5. Selesai.
+
+
+
