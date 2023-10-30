@@ -1,0 +1,15 @@
+
+=================================
+Edit Registri Windows 10
+menonaktifkan setingan RpcAuthnLevelPrivacyEnabled di registri windows merupakan cara tercepat untuk mengatasi Printer Error 0x0000011b dalam kasus ini.
+
+Carilah "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Print", dan
+tambahkan DWORD (32 bit) value baru dengan nama RpcAuthnLevelPrivacyEnabled dengan value data = 0
+
+============================
+
+
+
+
+
+====================== PUDIN_NAJZMITEA ==============================
