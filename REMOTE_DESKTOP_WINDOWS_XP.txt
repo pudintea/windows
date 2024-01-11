@@ -1,0 +1,9 @@
+Untuk menjalankan Remote Desktop pada Wondows XP, pada komputer host (komputer yang hendak di-remote) perlu disetting terlebih dahulu, berikut ini langkah langkahnya :
+buka Control Panel (Category View)
+pilih Performance and Maintenance
+pilih System
+maka akan muncul System Properties
+klik tab Remote
+lihat bagian Remote Desktop
+lalu centang Allow users to connect remotely to this computer
+klik Apply lalu Ok
