@@ -10,6 +10,17 @@ tambahkan DWORD (32 bit) value baru dengan nama RpcAuthnLevelPrivacyEnabled deng
 
 
 
+2. Kode Error 0x0000011b Windows 10 Sharing Printer
+=================================================
+
+Cara mengatasi problem tersebut yaitu :
+
+Buka Windows Registry Editor (regedit)
+Kemudian arahkan ke HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print
+Kemudian buat DWORD-32 baru dengan nama RpcAuthnLevelPrivacyEnabled set Value Data : 0
+Selanjutnya Restart PC / Laptop
+Error 0x0000011b akan hilang dan sharing printer bisa digunakan kembali.
 
 
-====================== PUDIN_NAJZMITEA ==============================
+
+====================== PUDIN.MY.ID ==============================
