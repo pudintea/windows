@@ -20,7 +20,7 @@ Kemudian arahkan ke HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print
 Kemudian buat DWORD-32 baru dengan nama RpcAuthnLevelPrivacyEnabled set Value Data : 0
 Selanjutnya Restart PC / Laptop
 Error 0x0000011b akan hilang dan sharing printer bisa digunakan kembali.
-
+*) Tutorial ini dilakukan di 2 komputer, komputer yang jadi server dan komputer yang jadi client
 
 
 ====================== PUDIN.MY.ID ==============================
