@@ -23,4 +23,13 @@ Error 0x0000011b akan hilang dan sharing printer bisa digunakan kembali.
 *) Tutorial ini dilakukan di 2 komputer, komputer yang jadi server dan komputer yang jadi client
 
 
+3. Kode Error :  0x00000709
+
+1. Local Group Policy (gpedit) => Computer Configure => Printers => Configure RPC Connection Settings : Enable => Protocol Of to use for outgoing RPC Connection : RPC over named pipes => Apply/OK
+2. Local Group Policy (gpedit) => Computer Configure => Printers => Printer Browsing : Enabled => Apply/OK
+3. Restart Service => Print Spooler.
+4. Regedit => "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT" klik kanan pada folder, pilih New => Key kasih nama/rename "Printers", di dalam Printers, pilih New => Key kasih nama/rename "RPC",
+   Hasilnya harusnya : "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Printers\RPC" selanjutnya klik kanan => New => DWORD(32-Bit) rename "RpcUseNamedPipeProtocol" Value date : 1
+
+
 ====================== PUDIN.MY.ID ==============================
