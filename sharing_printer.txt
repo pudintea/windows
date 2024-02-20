@@ -40,4 +40,10 @@ Lanjut
 8. Regedit => "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print" => New => DWORD (32) => rename "RpcAuthnLevelPrivacyEnabled" value date : 0
 9. Restart Service => Print Spooler => Stop\Start.
 10. Restart komputernya
+
+
+
+
+
+
 ====================== PUDIN.MY.ID ==============================
