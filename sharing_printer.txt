@@ -38,6 +38,6 @@ Lanjut
    "RpcOverNamedPipes" Value date : 1
 7. Regedit => "HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows" => Klik kanan pada bagian Windows => Permissions => Group or User names : ALL APPLICATION PACKAGES => Full Control dan Read : Ceklis => OK/Applay
 8. Regedit => "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print" => New => DWORD (32) => rename "RpcAuthnLevelPrivacyEnabled" value date : 0
-9. Restart Service => Print Spooler.
+9. Restart Service => Print Spooler => Stop\Start.
 
 ====================== PUDIN.MY.ID ==============================
