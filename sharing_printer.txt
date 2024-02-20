@@ -33,7 +33,10 @@ Lanjut
 4. Local Group Policy (gpedit) => Computer Configure => Printers => Printer Browsing : Enabled => Apply/OK
 5. Restart Service => Print Spooler.
 6. Regedit => "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT" klik kanan pada folder, pilih New => Key kasih nama/rename "Printers", di dalam Printers, pilih New => Key kasih nama/rename "RPC",
-   Hasilnya harusnya : "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Printers\RPC" selanjutnya klik kanan => New => DWORD(32-Bit) rename "RpcUseNamedPipeProtocol" Value date : 1
+   Hasilnya harusnya : "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Printers\RPC" selanjutnya klik kanan => New => DWORD(32-Bit) rename 
+   "RpcUseNamedPipeProtocol" Value date : 1
+   "RpcOverTCP" Value date : 0
+   "RpcOverNamedPipes" Value date : 1
 
 
 ====================== PUDIN.MY.ID ==============================
