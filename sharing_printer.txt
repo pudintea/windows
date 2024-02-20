@@ -31,13 +31,13 @@ Lanjut
 3. Local Group Policy (gpedit) => Computer Configure => Printers => Configure RPC Listener Settings : Enabled => Protocols to Allow for Incomming RPC Connection : RPC over named pipes and TCP => Apply/OK
 4. Local Group Policy (gpedit) => Computer Configure => Printers => Configure RPC over TCP Port : Enabled => RPC over TCP Port : 0 => Apply/OK
 5. Local Group Policy (gpedit) => Computer Configure => Printers => Printer Browsing : Enabled => Apply/OK
-6. Restart Service => Print Spooler.
-7. Regedit => "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT" klik kanan pada folder, pilih New => Key kasih nama/rename "Printers", di dalam Printers, pilih New => Key kasih nama/rename "RPC",
+6. Regedit => "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT" klik kanan pada folder, pilih New => Key kasih nama/rename "Printers", di dalam Printers, pilih New => Key kasih nama/rename "RPC",
    Hasilnya harusnya : "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Printers\RPC" selanjutnya klik kanan => New => DWORD(32-Bit) rename 
    "RpcUseNamedPipeProtocol" Value date : 1
    "RpcOverTCP" Value date : 0
    "RpcOverNamedPipes" Value date : 1
-8. Regedit => "HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows" => Klik kanan pada bagian Windows => Permissions => Group or User names : ALL APPLICATION PACKAGES => Full Control dan Read : Ceklis => OK/Applay
-
+7. Regedit => "HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows" => Klik kanan pada bagian Windows => Permissions => Group or User names : ALL APPLICATION PACKAGES => Full Control dan Read : Ceklis => OK/Applay
+8. Regedit => "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print" => New => DWORD (32) => rename "RpcAuthnLevelPrivacyEnabled" value date : 0
+9. Restart Service => Print Spooler.
 
 ====================== PUDIN.MY.ID ==============================
