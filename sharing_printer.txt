@@ -23,7 +23,7 @@ Error 0x0000011b akan hilang dan sharing printer bisa digunakan kembali.
 *) Tutorial ini dilakukan di 2 komputer, komputer yang jadi server dan komputer yang jadi client
 
 
-3. Kode Error :  0x00000709
+3. Kode Error :  0x00000709 (Windows 11)
 =============================
 1. Conrtrol Panel => Program => Program and Peatures => Turn Windows Feature ON or Off => Scrol kebawah cari "Print and Document Service" klik logo + yang ada di samping kiri => Centang 2, yaitu LPD Print Service dan LPR Port Monitor => lalu klik ok dan tunggu sampai selesai.
 Lanjut
