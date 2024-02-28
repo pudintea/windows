@@ -1,0 +1,22 @@
+
+==== GITHUB ============================
+
+git config user.name "Your Name Here"
+git config user.email "your@email.example"
+OR
+git config --global user.name "Your Name Here"
+git config --global user.email your@email.example
+
+
+git config --global core.autocrlf false
+
+git init 
+git add .
+git commit -m "Commit Pertama"
+git branch -M main
+git remote add origin https://github.com/pudin/api_sederhana.git
+git pull origin main
+git push -f -u origin main
+
+
+===============================PUDIN.MY.ID===================================
