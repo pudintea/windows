@@ -1,0 +1,10 @@
+Block table yang ingin diberikan garis nya
+
+Format => Format Bersyarat => Format Shel Jika... : Format Khusunya adalah.
+Pada bagian nilai atau Formula, tulis seperti ini "=isodd(row())" Tanpa Kutip.
+SIlahkan sesuaikan warnanya dan klik selesai jika dirasa sudah sesuai.
+
+=isodd(row())
+
+
+========================= PUDIN.MY.ID ===================================
