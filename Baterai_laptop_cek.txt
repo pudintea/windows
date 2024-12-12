@@ -1,0 +1,22 @@
+==
+Klik kanan para tombol Start
+Pada menu search, ketik Command Prompt
+Pilih Run As Administrator
+Pada pop-up Command Prompt yang muncul, ketik : powercfg /batteryreport
+
+Tunggu 60 detik dan lihat lokasi penyimpanan untuk memeriksa laporan energi baterai,
+Biasanya di : (C:) > windows > system32 > battery-report.html
+Silahkan buka file battery-report.html dengan web browser.
+
+Jika laporan sudah terbuka, cek di bagian Installed Batteries
+Periksa kolom Design Capacity dan Last Full Charge Capacity
+Amati perbedaan yang ada pada keduanya
+
+Jika keduanya memiliki perbedaan hingga mempunyai jarak lebih dari 50%,
+Anda disarankan untuk mengganti baterai laptop.
+
+Melalui laporan tersebut,
+Anda juga akan disajikan analisis mengenai error dan peringatan mengenai penggunaan baterai.
+
+
+===================== PUDIN.MY.ID =======================
