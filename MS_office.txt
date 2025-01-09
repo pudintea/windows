@@ -7,3 +7,14 @@ Solusi :
 3. Delete OfficeUpdate key
 4. Restart your computer (recommended)
 5. Install your Microsoft 365!
+
+
+Solusi 2 :
+1. Open registry editor.
+2. Go through this path: Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun
+3. Delete OfficeUpdate key
+4. Restart your computer (recommended)
+5. Install your Microsoft 365!
+
+
+================ PUDIN.MY.ID ==========================
