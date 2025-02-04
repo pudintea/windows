@@ -44,7 +44,49 @@ Listen 8071
     </FilesMatch>
 </VirtualHost>
 
+### ============================== 8. 1 =========================================
 
+ScriptAlias /php8_1/ "D:/xampp/php8_1/"
+<Directory "D:/xampp/php8_1">
+    AllowOverride None
+    Options None
+    Require all denied
+    <Files "php-cgi.exe">
+          Require all granted
+    </Files>
+</Directory>
+ 
+Listen 7081
+<VirtualHost *:7081>
+    UnsetEnv PHPRC
+    <FilesMatch "\.php$">
+        php_flag engine off
+        SetHandler application/x-httpd-php8_1
+        Action application/x-httpd-php8_1 "/php8_1/php-cgi.exe"
+    </FilesMatch>
+</VirtualHost>
+ 
+### ============================== 8. 2 =========================================
+
+ScriptAlias /php8_2/ "D:/xampp/php8_2/"
+<Directory "D:/xampp/php8_2">
+    AllowOverride None
+    Options None
+    Require all denied
+    <Files "php-cgi.exe">
+          Require all granted
+    </Files>
+</Directory>
+ 
+Listen 7082
+<VirtualHost *:7082>
+    UnsetEnv PHPRC
+    <FilesMatch "\.php$">
+        php_flag engine off
+        SetHandler application/x-httpd-php8_2
+        Action application/x-httpd-php8_2 "/php8_2/php-cgi.exe"
+    </FilesMatch>
+</VirtualHost>
 
 
 
