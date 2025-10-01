@@ -1,0 +1,82 @@
+
+
+PRINT SERVER DENGAN STB HG680 dengan CUPS
+=========================================
+Install CUPS
+> apt install cups -y
+
+Cek apakah cups sudah berjalan
+> systemctl status
+
+Konfigurasi pada CUPS
+nano /etc/cups/cupsd.conf
+
+# Onle Listen for connections from the local machine
+Listen localhost:631
+Ubah Menjadi :
+port 631
+
+# Dhow shared printers on the local network.
+Browsing No
+Ubah menjadi :
+Browsing On
+
+# Restirect access to the server
+<Location />
+  Order allow,deny
+</Location>
+
+Ubah Jadi :
+
+<Location />
+  Order allow,deny
+  Allow @LOCAL
+</Location>
+
+# Restricts access to the admin pages
+<Location />
+  AuthType Default
+  Require user @SYSTEM
+  Order allow,deny
+</Location>
+
+Ubah Menjadi :
+
+<Location />
+  AuthType Default
+  Require user @SYSTEM
+  Order allow,deny
+  Allow @LOCAL
+</Location>
+
+
+Restart CUPS
+> systemctl restart cups
+
+
+INSTALL DRIVER PRINTER
+Printer Canon/Epson
+> sudo apt install printer-driver-gutenprint -y
+Printer HP
+> sudo apt install hplip -y
+
+
+Install Driver untuk windows/Client
+> sudo apt install avahi-daemon -y
+
+Enable
+> systemctl enable avahi-daemon
+
+
+BROWSER
+Aksess IP servernya, portnya 631 (Sesuai diatas)
+Masuk ke menu Admin
+Masuk dengan user dan password linux server.
+Jangan lupa centang :  Share this printer
+
+
+
+
+
+
+==== Pudin Saepudin : italazhar.com
