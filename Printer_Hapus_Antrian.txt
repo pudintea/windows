@@ -1,0 +1,12 @@
+
+
+Windows Spooler
+: Services => Print Spooler : Disable
+Cari 
+C:\Windows\System32\spool\PRINTERS (Hapus semua file yang ada di dalam folder ini)
+Enable lagi Printer Spooler
+
+
+
+
+=== Pudin Saepudin : italazhar.com
