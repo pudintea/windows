@@ -1,6 +1,6 @@
 
 
-PRINT SERVER DENGAN STB HG680 dengan CUPS
+PRINT SERVER DENGAN STB HG680P dengan CUPS
 =========================================
 Install CUPS
 > apt install cups -y
