@@ -1,6 +1,8 @@
 
 ==== GITHUB ============================
 
+: Credential Manager > Windows Credentials
+
 git config user.name "Your Name Here"
 git config user.email "your@email.example"
 OR
