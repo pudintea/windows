@@ -6,6 +6,10 @@ menonaktifkan setingan RpcAuthnLevelPrivacyEnabled di registri windows merupakan
 Carilah "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Print", dan
 tambahkan DWORD (32 bit) value baru dengan nama RpcAuthnLevelPrivacyEnabled dengan value data = 0
 
+Menggunakan Software Papercut
+==> https://www.papercut.com
+
+
 ============================
 
 
