@@ -8,6 +8,7 @@ tambahkan DWORD (32 bit) value baru dengan nama RpcAuthnLevelPrivacyEnabled deng
 
 Menggunakan Software Papercut
 ==> https://www.papercut.com
+Link Tutorial : https://www.youtube.com/watch?v=Y0n31H86klo
 
 
 ============================
