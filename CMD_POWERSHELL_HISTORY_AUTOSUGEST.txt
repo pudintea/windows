@@ -1,0 +1,87 @@
+
+## CMD DAN POWERSHELL HISTORY AUTO SUGEST
+
+PUDIN SAEPUDIN
+KONTAK
+ - https://t.me/pudin_ira
+ - https://instagram.com/pudin.ira
+CEK VERSI POWER SHELL
+======================
+Cek dulu versi kamu
+Jalankan ini:
+> $PSVersionTable
+
+Kalau hasilnya:
+5.1 → itu Windows PowerShell lama
+7.x → itu PowerShell baru (yang kamu butuh)
+
+
+UPDATE KE VERSI 7
+==================
+Cara install paling gampang (pakai command)
+Buka PowerShell (yang sekarang), lalu jalankan:
+> winget install --id Microsoft.Powershell --source winget
+
+Tunggu sampai selesai.
+
+Cek berhasil atau tidak
+Setelah install, jalankan:
+> pwsh
+
+lalu cek versi:
+> $PSVersionTable
+Pastikan sudah versi 7.
+
+
+Aktifkan autosuggest
+======================
+Di PowerShell baru (pwsh), jalankan:
+1. INI LISTVIEW (ini yang biasa saya pake)
+> Set-PSReadLineOption -PredictionSource History
+> Set-PSReadLineOption -PredictionViewStyle ListView
+
+2. INI INLINE VIEW
+> Set-PSReadLineOption -PredictionSource History
+> Set-PSReadLineOption -PredictionViewStyle InlineView
+
+
+
+AUTOSUGEST
+Buat dulu file profile
+=======================
+Jalankan ini di PowerShell (atau pwsh):
+> New-Item -ItemType File -Path $PROFILE -Force
+
+Cek path profile kamu
+Biar jelas lokasinya:
+> $PROFILE
+
+Biasanya hasilnya seperti:
+C:\Users\Administrator\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+
+Buka di Notepad
+> notepad $PROFILE
+
+Isi dengan setting autosuggest
+Masukkan ini:
+1. INI LISTVIEW (ini yang biasa saya pake)
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView
+
+2. INI INLINE VIEW
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle InlineView
+
+Terakhir
+Tutup PowerShell, lalu buka lagi
+
+Catatan penting
+==========================
+Kalau kamu masih buka:
+Windows PowerShell (yang lama)
+
+Maka setting ini tetap tidak akan jalan, karena:
+fitur prediction cuma ada di PowerShell 7+
+
+
+========= PUDIN SAEPUDIN, italazhar.com ===============
