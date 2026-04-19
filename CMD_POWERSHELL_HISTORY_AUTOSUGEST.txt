@@ -33,6 +33,12 @@ lalu cek versi:
 Pastikan sudah versi 7.
 
 
+Install PSReadLine (kalau belum aktif)
+======================================
+Di PowerShell, jalankan:
+> Install-Module PSReadLine -Force
+
+
 Aktifkan autosuggest
 ======================
 Di PowerShell baru (pwsh), jalankan:
