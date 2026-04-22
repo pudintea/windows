@@ -90,4 +90,21 @@ Maka setting ini tetap tidak akan jalan, karena:
 fitur prediction cuma ada di PowerShell 7+
 
 
+BIAR LEBIH BAGUS
+=================
+Cek winget ada atau tidak
+> winget --version
+
+Install oh-my-posh
+Opsi paling mudah (Windows):
+via Winget:
+> winget install JanDeDobbeleer.OhMyPosh
+atau via Scoop:
+> scoop install oh-my-posh
+
+*) Sambil sesuaikan dengan meminta bantuan AI.
+
+
+
+
 ========= PUDIN SAEPUDIN, italazhar.com ===============
