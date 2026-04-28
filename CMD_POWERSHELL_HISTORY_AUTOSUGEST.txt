@@ -105,6 +105,7 @@ atau via Scoop:
 *) Sambil sesuaikan dengan meminta bantuan AI.
 
 
-
+JIKA ADA ERROR
+> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 ========= PUDIN SAEPUDIN, italazhar.com ===============
